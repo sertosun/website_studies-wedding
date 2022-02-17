@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #d9c1bd;
+}
+
+.logo img {
+  width: 70%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 2.5em 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+ul li:hover a {
+  background-color: hsl(9, 29%, 66%);
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+ul li a:hover {
+  transform: scale(1.2);
+}
+
+.contact {
+  background-color: hsl(9, 29%, 66%);
+  margin-right: 40px;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+  padding: 2.5em 0.8em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* --------------- MAIN ---------------------- */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 4em 2em;
+  justify-content: space-between;
+}
+
+/*----------------- COMMENT----------------- */
+
+.comment-card {
+  margin-bottom: 3.2em;
+  border-radius: 15px;
+  margin: 1.2em 1.2em;
+  background-color: hsl(6, 14%, 38%);
+  color: rgb(212, 204, 204);
+  width: 200px;
+  padding: 1.2em;
+  box-shadow: 0px 2px 7px 4px #d9c1bd;
+  transition: all 0.5s;
+}
+
+.comment-card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+/* ----------------PRODUCT-------------- */
+
+.product-container h1 {
+  font-size: 3em;
+}
+
+.product-container p {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.product-card {
+  border: 1px solid #e0aea5;
+  border-radius: 5px;
+  margin-right: 10px;
+  height: 350px;
+}
+
+.product-text {
+  padding: 1em;
+}
+
+.product-card p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+.product-card .image {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  border-radius: 0 0 5px 5px;
+}
+
+.product-card .foto {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QAipyY_wz-KjM8_u0DnmRFGNQUy_1AkjAg&usqp=CAU");
+}
+
+.product-card .video {
+  background-image: url("https://www.studio-photogram.com/img/Hochzeitsfotograf-Ruhrgebiet-NRW-Hattingen-Gleis79-Hattingen-Paarshooting.jpg");
+}
+
+/* ----------------------FORM------------ */
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #d9c1bd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(9, 29%, 66%);
+}
+
+.forum-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 290px;
+}
